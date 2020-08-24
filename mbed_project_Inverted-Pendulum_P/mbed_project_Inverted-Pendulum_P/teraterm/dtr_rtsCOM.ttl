@@ -1,0 +1,11 @@
+BAUDRATE = '9600'
+COMMAND = '/C=38'
+strconcat COMMAND param2
+strconcat COMMAND ' /BAUD='
+strconcat COMMAND BAUDRATE
+connect COMMAND
+
+setrts 0
+setdtr 0
+ 
+end
